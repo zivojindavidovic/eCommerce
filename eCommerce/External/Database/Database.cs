@@ -32,10 +32,10 @@ public class Database
         return ret;
     }
 
-    public List<Dictionary<string, object>> select(string sql)
+    public List<Dictionary<string, string>> select(string sql)
     {
-        List<Dictionary<string, object>> result = new List<Dictionary<string, object>>();
-        Dictionary<string, object> row = new Dictionary<string, object>();
+        List<Dictionary<string, string>> result = new List<Dictionary<string, string>>();
+        Dictionary<string, string> row = new Dictionary<string, string>();
         List<string> errors = new List<string>();
 
         using (connection) {
@@ -44,7 +44,7 @@ public class Database
                     using (MySqlDataReader reader = command.ExecuteReader()) {
                         while (reader.Read()) {
                             for (int i = 0; i < reader.FieldCount; i++) {
-                                row[reader.GetName(i)] = reader.GetValue(i);
+                                row[reader.GetName(i)] = reader.GetValue(i).ToString()!;
                             }
                             result.Add(row);
                         }

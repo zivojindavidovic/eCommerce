@@ -32,12 +32,16 @@ public class UserServiceImpl : UserService
     public string login(Login login)
     {
         string sql = $"SELECT * FROM user WHERE username = '{login.username}'";
+        var password = "";
                
         var result = database.select(sql);
         var user = result[0];
-        var password = user["password"];
+        
+        if (user.ContainsKey("password")) {
+            password = user["password"];
+        }
 
-        if (!BCrypt.Net.BCrypt.Verify(login.password, password.ToString())) {
+        if (!BCrypt.Net.BCrypt.Verify(login.password, password)) {
             return "";
         }
 

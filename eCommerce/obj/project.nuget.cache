@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tkTTSYUnBn2S/0WNRqITLwy8JLziqUpzquyYspsvKZBKJSzMxlCPooON+XjV5HWntnD36ExPgIeVF7heIWvGHQ==",
+  "dgSpecHash": "c8zrouuK4GbDKijyZC1uZ7Xczx5LDutPPsCu229bcRIWiRaQnXqGGYO2QuslEm6itoXvzJkM1OG0tlup9FXjjg==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce\\eCommerce.csproj",
+  "projectFilePath": "C:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce\\eCommerce.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Zivojin Davidovic\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\Zivojin Davidovic\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
@@ -10,9 +10,12 @@
     "C:\\Users\\Zivojin Davidovic\\.nuget\\packages\\k4os.compression.lz4\\1.3.5\\k4os.compression.lz4.1.3.5.nupkg.sha512",
     "C:\\Users\\Zivojin Davidovic\\.nuget\\packages\\k4os.compression.lz4.streams\\1.3.5\\k4os.compression.lz4.streams.1.3.5.nupkg.sha512",
     "C:\\Users\\Zivojin Davidovic\\.nuget\\packages\\k4os.hash.xxhash\\1.0.8\\k4os.hash.xxhash.1.0.8.nupkg.sha512",
+    "C:\\Users\\Zivojin Davidovic\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.0\\microsoft.aspnetcore.authentication.jwtbearer.8.0.0.nupkg.sha512",
     "C:\\Users\\Zivojin Davidovic\\.nuget\\packages\\microsoft.identitymodel.abstractions\\7.0.3\\microsoft.identitymodel.abstractions.7.0.3.nupkg.sha512",
     "C:\\Users\\Zivojin Davidovic\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\7.0.3\\microsoft.identitymodel.jsonwebtokens.7.0.3.nupkg.sha512",
     "C:\\Users\\Zivojin Davidovic\\.nuget\\packages\\microsoft.identitymodel.logging\\7.0.3\\microsoft.identitymodel.logging.7.0.3.nupkg.sha512",
+    "C:\\Users\\Zivojin Davidovic\\.nuget\\packages\\microsoft.identitymodel.protocols\\7.0.3\\microsoft.identitymodel.protocols.7.0.3.nupkg.sha512",
+    "C:\\Users\\Zivojin Davidovic\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\7.0.3\\microsoft.identitymodel.protocols.openidconnect.7.0.3.nupkg.sha512",
     "C:\\Users\\Zivojin Davidovic\\.nuget\\packages\\microsoft.identitymodel.tokens\\7.0.3\\microsoft.identitymodel.tokens.7.0.3.nupkg.sha512",
     "C:\\Users\\Zivojin Davidovic\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Zivojin Davidovic\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",

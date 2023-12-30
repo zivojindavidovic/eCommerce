@@ -2,6 +2,7 @@ using System.Reflection.Metadata.Ecma335;
 using eCommerce.Contracts.User;
 using eCommerce.Models;
 using eCommerce.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace eCommerce.Controllers;
@@ -17,7 +18,7 @@ public class UserController : ControllerBase
         this.userService = userService;
     }
 
-    [HttpPost()]
+    [HttpPost, Authorize]
     public IActionResult createUser(CreateUserRequest request)
     {
         
@@ -54,12 +55,19 @@ public class UserController : ControllerBase
         );
 
         var loginSuccess = userService.login(login);
-
-        if (loginSuccess.Length > 0) {
-            return BadRequest();
+        if (loginSuccess.Length == 0) {
+            var response = new LoginResponse(
+                false,
+                ""
+            );
+            return BadRequest(response);
         }
 
-        return Ok(loginSuccess);
+        var successResponse = new LoginResponse(
+            true,
+            loginSuccess
+        );  
+        return Ok(successResponse);
     }
 
     [HttpGet("{id:guid}")]

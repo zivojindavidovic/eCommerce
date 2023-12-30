@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QZZayl/77KlQ4I5/ecvGJJMhDLdjhaEBlCGi57EU7DhHpQTlZsW1NppDegIB5lbJ7l/QOZaRtqkwrEkPVvGvoA==",
+  "dgSpecHash": "Xaar7LOcfAcWvYYnUpspvHAc7iyzinRU1XGZY1mluuZidCT6ktI7WHIkCzgy6iMY8G/DXxzYGRWLdC8iXORCGQ==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce.Contracts\\eCommerce.Contracts.csproj",
+  "projectFilePath": "C:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce.Contracts\\eCommerce.Contracts.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Zivojin Davidovic\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "C:\\Users\\Zivojin Davidovic\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
