@@ -1,8 +1,9 @@
+
 POST http://localhost:5077/users
 Content-Type: application/json
 
 {
-    "username": "zivojindavidovic",
-    "email": "zivojindavidovic@gmail.com",
+    "username": "zivojin01",
+    "email": "zivojin.davidovic2001@gmail.com",
     "password": "zivojindavidovicpassword"
 }

@@ -5,6 +5,9 @@ namespace eCommerce.Services;
 
 public interface UserService
 {
-    void createUser(User user);
+    bool createUser(User user);
+
+    string login(Login login);
     User getUser(Guid id);
+
 }

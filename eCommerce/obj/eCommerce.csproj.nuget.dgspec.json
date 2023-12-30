@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce\\eCommerce.csproj": {}
+    "c:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce\\eCommerce.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce.Contracts\\eCommerce.Contracts.csproj": {
+    "c:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce.Contracts\\eCommerce.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce.Contracts\\eCommerce.Contracts.csproj",
+        "projectUniqueName": "c:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce.Contracts\\eCommerce.Contracts.csproj",
         "projectName": "eCommerce.Contracts",
-        "projectPath": "C:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce.Contracts\\eCommerce.Contracts.csproj",
+        "projectPath": "c:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce.Contracts\\eCommerce.Contracts.csproj",
         "packagesPath": "C:\\Users\\Zivojin Davidovic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce.Contracts\\obj\\",
+        "outputPath": "c:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Zivojin Davidovic\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -59,14 +65,14 @@
         }
       }
     },
-    "C:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce\\eCommerce.csproj": {
+    "c:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce\\eCommerce.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce\\eCommerce.csproj",
+        "projectUniqueName": "c:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce\\eCommerce.csproj",
         "projectName": "eCommerce",
-        "projectPath": "C:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce\\eCommerce.csproj",
+        "projectPath": "c:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce\\eCommerce.csproj",
         "packagesPath": "C:\\Users\\Zivojin Davidovic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce\\obj\\",
+        "outputPath": "c:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Zivojin Davidovic\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -83,8 +89,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce.Contracts\\eCommerce.Contracts.csproj": {
-                "projectPath": "C:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce.Contracts\\eCommerce.Contracts.csproj"
+              "c:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce.Contracts\\eCommerce.Contracts.csproj": {
+                "projectPath": "c:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce.Contracts\\eCommerce.Contracts.csproj"
               }
             }
           }
@@ -98,6 +104,28 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "Microsoft.IdentityModel.JsonWebTokens": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

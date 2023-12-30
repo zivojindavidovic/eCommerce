@@ -1,3 +1,4 @@
+using System.Reflection.Metadata.Ecma335;
 using eCommerce.Contracts.User;
 using eCommerce.Models;
 using eCommerce.Services;
@@ -19,12 +20,17 @@ public class UserController : ControllerBase
     [HttpPost()]
     public IActionResult createUser(CreateUserRequest request)
     {
+        
+        string passwordHash = BCrypt.Net.BCrypt.HashPassword(request.password);
+        Console.WriteLine(passwordHash);
+
         var user = new User(
             Guid.NewGuid(),
             request.username,
             request.email,
-            request.password
+            passwordHash
         );
+
 
         //Save to DB
         userService.createUser(user);
@@ -37,6 +43,23 @@ public class UserController : ControllerBase
         );
 
         return Ok(response);
+    }
+
+    [HttpPost("{login}")]
+    public IActionResult login(LoginRequest request)
+    {
+        var login = new Login(
+            request.username,
+            request.password
+        );
+
+        var loginSuccess = userService.login(login);
+
+        if (loginSuccess.Length > 0) {
+            return BadRequest();
+        }
+
+        return Ok(loginSuccess);
     }
 
     [HttpGet("{id:guid}")]

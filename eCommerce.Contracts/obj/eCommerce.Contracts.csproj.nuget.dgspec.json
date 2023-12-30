@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce.Contracts\\eCommerce.Contracts.csproj": {}
+    "c:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce.Contracts\\eCommerce.Contracts.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce.Contracts\\eCommerce.Contracts.csproj": {
+    "c:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce.Contracts\\eCommerce.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce.Contracts\\eCommerce.Contracts.csproj",
+        "projectUniqueName": "c:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce.Contracts\\eCommerce.Contracts.csproj",
         "projectName": "eCommerce.Contracts",
-        "projectPath": "C:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce.Contracts\\eCommerce.Contracts.csproj",
+        "projectPath": "c:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce.Contracts\\eCommerce.Contracts.csproj",
         "packagesPath": "C:\\Users\\Zivojin Davidovic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce.Contracts\\obj\\",
+        "outputPath": "c:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Zivojin Davidovic\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
