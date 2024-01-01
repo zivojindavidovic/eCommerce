@@ -6,8 +6,7 @@ namespace eCommerce.Services;
 public interface UserService
 {
     bool createUser(User user);
-
-    string login(Login login);
+    List<Dictionary<string, object>> login(Login login);
     User getUser(Guid id);
-
+    User upsertUser(Guid id, string username);
 }

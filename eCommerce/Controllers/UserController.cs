@@ -1,14 +1,14 @@
-using System.Reflection.Metadata.Ecma335;
+using System.Web.Http.Cors;
 using eCommerce.Contracts.User;
 using eCommerce.Models;
 using eCommerce.Services;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace eCommerce.Controllers;
 
 [ApiController]
 [Route("users")]
+[EnableCors(origins: "http://localhost:4200/", headers: "*", methods: "*")]
 public class UserController : ControllerBase
 {
     private readonly UserService userService;
@@ -18,12 +18,11 @@ public class UserController : ControllerBase
         this.userService = userService;
     }
 
-    [HttpPost, Authorize]
+    [HttpPost]
     public IActionResult createUser(CreateUserRequest request)
     {
-        
-        string passwordHash = BCrypt.Net.BCrypt.HashPassword(request.password);
-        Console.WriteLine(passwordHash);
+        int salt = 12;
+        string passwordHash = BCrypt.Net.BCrypt.HashPassword(request.password, salt);
 
         var user = new User(
             Guid.NewGuid(),
@@ -32,13 +31,11 @@ public class UserController : ControllerBase
             passwordHash
         );
 
-
-        //Save to DB
         userService.createUser(user);
 
         var response = new CreateUserResponse(
             user.id,
-            user.username, 
+            user.username,
             user.email,
             user.password
         );
@@ -49,25 +46,24 @@ public class UserController : ControllerBase
     [HttpPost("{login}")]
     public IActionResult login(LoginRequest request)
     {
-        var login = new Login(
-            request.username,
-            request.password
-        );
+        var login = new Login(request.username, request.password);
+        var result = userService.login(login);
 
-        var loginSuccess = userService.login(login);
-        if (loginSuccess.Length == 0) {
-            var response = new LoginResponse(
-                false,
-                ""
-            );
-            return BadRequest(response);
+        if (result.Count > 0)
+        {
+            if ((string)result[0]["errors"] != "")
+            {
+                return BadRequest(new LoginResponse(false, (string)result[0]["errors"]));
+            }
+
+            string token = (string)result[0]["token"];
+
+            var successResponse = new LoginResponse(true, "", token, (string)result[0]["user_id"], (string)result[0]["username"]);
+
+            return Ok(successResponse);
         }
 
-        var successResponse = new LoginResponse(
-            true,
-            loginSuccess
-        );  
-        return Ok(successResponse);
+        return Ok(new LoginResponse(false, ""));
     }
 
     [HttpGet("{id:guid}")]
@@ -87,14 +83,17 @@ public class UserController : ControllerBase
     [HttpPut("{id:guid}")]
     public IActionResult upsertUser(Guid id, UpsertUserRequest request)
     {
+        var username = request.username;
 
-        return Ok(request);
-    }
+        User user = userService.upsertUser(id, username);
 
-    [HttpDelete("{id:guid}")]
-    public IActionResult deleteUser(Guid id)
-    {
+        var response = new CreateUserResponse(
+            user.id,
+            user.username,
+            user.email,
+            user.password
+        );
 
-        return Ok(id);
+        return Ok(response);
     }
 }
