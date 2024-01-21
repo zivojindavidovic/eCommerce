@@ -11,3 +11,16 @@ C:\Users\Zivojin Davidovic\Desktop\eCommerce\eCommerce.Contracts\obj\Debug\net8.
 C:\Users\Zivojin Davidovic\Desktop\eCommerce\eCommerce.Contracts\obj\Debug\net8.0\refint\eCommerce.Contracts.dll
 C:\Users\Zivojin Davidovic\Desktop\eCommerce\eCommerce.Contracts\obj\Debug\net8.0\eCommerce.Contracts.pdb
 C:\Users\Zivojin Davidovic\Desktop\eCommerce\eCommerce.Contracts\obj\Debug\net8.0\ref\eCommerce.Contracts.dll
+F:\eCommerce\eCommerce.Contracts\bin\Debug\net8.0\eCommerce.Contracts.deps.json
+F:\eCommerce\eCommerce.Contracts\bin\Debug\net8.0\eCommerce.Contracts.dll
+F:\eCommerce\eCommerce.Contracts\bin\Debug\net8.0\eCommerce.Contracts.pdb
+F:\eCommerce\eCommerce.Contracts\obj\Debug\net8.0\eCommerce.Contracts.csproj.AssemblyReference.cache
+F:\eCommerce\eCommerce.Contracts\obj\Debug\net8.0\eCommerce.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+F:\eCommerce\eCommerce.Contracts\obj\Debug\net8.0\eCommerce.Contracts.AssemblyInfoInputs.cache
+F:\eCommerce\eCommerce.Contracts\obj\Debug\net8.0\eCommerce.Contracts.AssemblyInfo.cs
+F:\eCommerce\eCommerce.Contracts\obj\Debug\net8.0\eCommerce.Contracts.csproj.CoreCompileInputs.cache
+F:\eCommerce\eCommerce.Contracts\obj\Debug\net8.0\eCommerce.Contracts.sourcelink.json
+F:\eCommerce\eCommerce.Contracts\obj\Debug\net8.0\eCommerce.Contracts.dll
+F:\eCommerce\eCommerce.Contracts\obj\Debug\net8.0\refint\eCommerce.Contracts.dll
+F:\eCommerce\eCommerce.Contracts\obj\Debug\net8.0\eCommerce.Contracts.pdb
+F:\eCommerce\eCommerce.Contracts\obj\Debug\net8.0\ref\eCommerce.Contracts.dll

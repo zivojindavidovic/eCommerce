@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce\\eCommerce.csproj": {}
+    "G:\\eCommerce\\eCommerce\\eCommerce.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce.Contracts\\eCommerce.Contracts.csproj": {
+    "G:\\eCommerce\\eCommerce.Contracts\\eCommerce.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce.Contracts\\eCommerce.Contracts.csproj",
+        "projectUniqueName": "G:\\eCommerce\\eCommerce.Contracts\\eCommerce.Contracts.csproj",
         "projectName": "eCommerce.Contracts",
-        "projectPath": "C:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce.Contracts\\eCommerce.Contracts.csproj",
+        "projectPath": "G:\\eCommerce\\eCommerce.Contracts\\eCommerce.Contracts.csproj",
         "packagesPath": "C:\\Users\\Zivojin Davidovic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce.Contracts\\obj\\",
+        "outputPath": "G:\\eCommerce\\eCommerce.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Zivojin Davidovic\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -65,14 +65,14 @@
         }
       }
     },
-    "C:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce\\eCommerce.csproj": {
+    "G:\\eCommerce\\eCommerce\\eCommerce.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce\\eCommerce.csproj",
+        "projectUniqueName": "G:\\eCommerce\\eCommerce\\eCommerce.csproj",
         "projectName": "eCommerce",
-        "projectPath": "C:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce\\eCommerce.csproj",
+        "projectPath": "G:\\eCommerce\\eCommerce\\eCommerce.csproj",
         "packagesPath": "C:\\Users\\Zivojin Davidovic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce\\obj\\",
+        "outputPath": "G:\\eCommerce\\eCommerce\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Zivojin Davidovic\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -89,8 +89,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce.Contracts\\eCommerce.Contracts.csproj": {
-                "projectPath": "C:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce.Contracts\\eCommerce.Contracts.csproj"
+              "G:\\eCommerce\\eCommerce.Contracts\\eCommerce.Contracts.csproj": {
+                "projectPath": "G:\\eCommerce\\eCommerce.Contracts\\eCommerce.Contracts.csproj"
               }
             }
           }

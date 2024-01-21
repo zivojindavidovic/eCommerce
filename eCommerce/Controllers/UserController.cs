@@ -19,7 +19,7 @@ public class UserController : ControllerBase
     }
 
     [HttpPost]
-    public IActionResult createUser(CreateUserRequest request)
+    public IActionResult register(CreateUserRequest request)
     {
         int salt = 12;
         string passwordHash = BCrypt.Net.BCrypt.HashPassword(request.password, salt);
@@ -31,14 +31,22 @@ public class UserController : ControllerBase
             passwordHash
         );
 
-        userService.createUser(user);
-
+        var isUserCreated = userService.createUser(user);
         var response = new CreateUserResponse(
+            isUserCreated,
             user.id,
             user.username,
             user.email,
             user.password
         );
+
+        if (!isUserCreated)
+        {
+            response = new CreateUserResponse
+            {
+                success = false
+            };
+        }
 
         return Ok(response);
     }
@@ -71,11 +79,11 @@ public class UserController : ControllerBase
     {
         User user = userService.getUser(id);
 
-        var response = new CreateUserResponse(
+        var response = new UserResponse(
+            true,
             user.id,
             user.username,
-            user.email,
-            user.password
+            user.email
         );
         return Ok(response);
     }
@@ -87,7 +95,7 @@ public class UserController : ControllerBase
 
         User user = userService.upsertUser(id, username);
 
-        var response = new CreateUserResponse(
+        var response = new UpsertUseResponse(
             user.id,
             user.username,
             user.email,

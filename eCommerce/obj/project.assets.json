@@ -2835,11 +2835,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce\\eCommerce.csproj",
+      "projectUniqueName": "G:\\eCommerce\\eCommerce\\eCommerce.csproj",
       "projectName": "eCommerce",
-      "projectPath": "C:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce\\eCommerce.csproj",
+      "projectPath": "G:\\eCommerce\\eCommerce\\eCommerce.csproj",
       "packagesPath": "C:\\Users\\Zivojin Davidovic\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce\\obj\\",
+      "outputPath": "G:\\eCommerce\\eCommerce\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Zivojin Davidovic\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2856,8 +2856,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce.Contracts\\eCommerce.Contracts.csproj": {
-              "projectPath": "C:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce.Contracts\\eCommerce.Contracts.csproj"
+            "G:\\eCommerce\\eCommerce.Contracts\\eCommerce.Contracts.csproj": {
+              "projectPath": "G:\\eCommerce\\eCommerce.Contracts\\eCommerce.Contracts.csproj"
             }
           }
         }
@@ -2937,6 +2937,46 @@
     }
   },
   "logs": [
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.IdentityModel.JsonWebTokens' 7.0.3 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-59j7-ghrg-fj52",
+      "libraryId": "Microsoft.IdentityModel.JsonWebTokens",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.IdentityModel.JsonWebTokens' 7.0.3 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-8g9c-28fc-mcx2",
+      "libraryId": "Microsoft.IdentityModel.JsonWebTokens",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'System.IdentityModel.Tokens.Jwt' 7.0.3 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-59j7-ghrg-fj52",
+      "libraryId": "System.IdentityModel.Tokens.Jwt",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'System.IdentityModel.Tokens.Jwt' 7.0.3 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-8g9c-28fc-mcx2",
+      "libraryId": "System.IdentityModel.Tokens.Jwt",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
     {
       "code": "NU1701",
       "level": "Warning",

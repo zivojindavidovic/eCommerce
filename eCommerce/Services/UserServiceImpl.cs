@@ -22,13 +22,8 @@ public class UserServiceImpl : UserService
     public bool createUser(User user)
     {
         string sql = $"INSERT INTO user (user_id, username, email, password) VALUES ('{user.id}', '{user.username}', '{user.email}', '{user.password}')";
-        bool ret = true;
 
-        if (!database.insert(sql))
-        {
-            ret = false;
-        }
-        return ret;
+        return database.insert(sql);
     }
 
     public List<Dictionary<string, object>> login(Login login)

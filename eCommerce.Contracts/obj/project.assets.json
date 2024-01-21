@@ -1790,11 +1790,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce.Contracts\\eCommerce.Contracts.csproj",
+      "projectUniqueName": "G:\\eCommerce\\eCommerce.Contracts\\eCommerce.Contracts.csproj",
       "projectName": "eCommerce.Contracts",
-      "projectPath": "C:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce.Contracts\\eCommerce.Contracts.csproj",
+      "projectPath": "G:\\eCommerce\\eCommerce.Contracts\\eCommerce.Contracts.csproj",
       "packagesPath": "C:\\Users\\Zivojin Davidovic\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Zivojin Davidovic\\Desktop\\eCommerce\\eCommerce.Contracts\\obj\\",
+      "outputPath": "G:\\eCommerce\\eCommerce.Contracts\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Zivojin Davidovic\\AppData\\Roaming\\NuGet\\NuGet.Config",
